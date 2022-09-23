@@ -1,0 +1,72 @@
+{
+  "sections": {
+    "16274504693b945046": {
+      "type": "text-image",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/pride-dog.jpg",
+        "desktop_image": "shopify:\/\/shop_images\/man-in-white-and-light-tan-outfit.jpg",
+        "eager": true,
+        "title": "",
+        "content": ""
+      }
+    },
+    "162745048023aee68c": {
+      "type": "text-image",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/mens-fashion-man-in-shirt-and-jeans-leaning-on-bicycle.jpg",
+        "desktop_image": "shopify:\/\/shop_images\/fashionable-man-in-hat.jpg",
+        "eager": false,
+        "title": "",
+        "content": ""
+      }
+    },
+    "1627450484e5b017f0": {
+      "type": "text-image",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/fashionable-man-in-hat.jpg",
+        "desktop_image": "shopify:\/\/shop_images\/mens-fashion-man-in-shirt-and-jeans-leaning-on-bicycle.jpg",
+        "eager": false,
+        "title": "",
+        "content": ""
+      }
+    },
+    "1627450491ef4b18c2": {
+      "type": "text-image",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/fashionable-man-in-hat.jpg",
+        "desktop_image": "shopify:\/\/shop_images\/couple-relax-at-home.jpg",
+        "eager": false,
+        "title": "",
+        "content": ""
+      }
+    },
+    "1627450497bfb1520d": {
+      "type": "text-image",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/mens-fashion-man-in-shirt-and-jeans-leaning-on-bicycle.jpg",
+        "desktop_image": "shopify:\/\/shop_images\/man-in-white-and-light-tan-outfit.jpg",
+        "eager": false,
+        "title": "",
+        "content": ""
+      }
+    },
+    "1627450503c93d2a32": {
+      "type": "text-image",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/fashionable-man-in-hat.jpg",
+        "desktop_image": "shopify:\/\/shop_images\/mens-fashion-man-in-shirt-and-jeans-leaning-on-bicycle.jpg",
+        "eager": false,
+        "title": "",
+        "content": ""
+      }
+    }
+  },
+  "order": [
+    "16274504693b945046",
+    "162745048023aee68c",
+    "1627450484e5b017f0",
+    "1627450491ef4b18c2",
+    "1627450497bfb1520d",
+    "1627450503c93d2a32"
+  ]
+}
