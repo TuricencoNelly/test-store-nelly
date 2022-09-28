@@ -6,19 +6,16 @@
 -%}
 
 <section>
-  <h1><{{- s.title -}}</h1>
-  <a href="">{{- s.button_text -}}</a>
-    
-  {%- render 'component.image',
-    img: image,
-    desktop_img: image_desktop
-  -%}
+  <h1>{{- s.title -}}</h1>
+  <a href=''>{{- s.button_text -}}</a>
 
-  {%- render 'component.image',
+  {%- render 'component.image', img: image, desktop_img: image_desktop -%}
+
+  {%-
+    render 'component.image',
     img: highlight_image,
   -%}
 </section>
-
 
 {% schema %}
 {

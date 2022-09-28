@@ -10,13 +10,23 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./scripts/components/core/hero.js":
+/*!*****************************************!*\
+  !*** ./scripts/components/core/hero.js ***!
+  \*****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _lib_choozy__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../lib/choozy */ \"./scripts/lib/choozy.js\");\n/* harmony import */ var _lib_string__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../lib/string */ \"./scripts/lib/string.js\");\n\n\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (window.component(node => {\n  const { button } = (0,_lib_choozy__WEBPACK_IMPORTED_MODULE_0__.default)(node, null);\n  // const info = button.getAttribute('data-info');\n  // const { info } = button.dataset;\n  const addToCart = (0,_lib_string__WEBPACK_IMPORTED_MODULE_1__.getString)('product.add_to_cart');\n  const quantity = (0,_lib_string__WEBPACK_IMPORTED_MODULE_1__.getString)('cart.quantity');\n  let count = 0;\n\n  button.addEventListener('click', () => {\n    count++;\n    button.innerHTML = `I'm tapped ${count} times`;\n    console.log(addToCart, quantity);\n  });\n}));\n\n\n//# sourceURL=webpack://shopify-starter/./scripts/components/core/hero.js?");
+
+/***/ }),
+
 /***/ "./scripts/components/product/components.js":
 /*!**************************************************!*\
   !*** ./scripts/components/product/components.js ***!
   \**************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _product_selection__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./product-selection */ \"./scripts/components/product/product-selection.js\");\n/* harmony import */ var _product_form__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./product-form */ \"./scripts/components/product/product-form.js\");\n\n\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({\n  productSelection: _product_selection__WEBPACK_IMPORTED_MODULE_0__.default,\n  productForm: _product_form__WEBPACK_IMPORTED_MODULE_1__.default,\n});\n\n\n//# sourceURL=webpack://shopify-starter/./scripts/components/product/components.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _product_selection__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./product-selection */ \"./scripts/components/product/product-selection.js\");\n/* harmony import */ var _product_form__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./product-form */ \"./scripts/components/product/product-form.js\");\n/* harmony import */ var _core_hero__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../core/hero */ \"./scripts/components/core/hero.js\");\n\n\n\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({\n  productSelection: _product_selection__WEBPACK_IMPORTED_MODULE_0__.default,\n  productForm: _product_form__WEBPACK_IMPORTED_MODULE_1__.default,\n  hero: _core_hero__WEBPACK_IMPORTED_MODULE_2__.default,\n});\n\n\n//# sourceURL=webpack://shopify-starter/./scripts/components/product/components.js?");
 
 /***/ }),
 

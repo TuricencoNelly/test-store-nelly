@@ -1,0 +1,67 @@
+{%- liquid
+  assign s = section.settings
+-%}
+
+{% comment %}
+   <section>
+    <h1>{{- s.title }}</h1>
+    <ul>
+      {%- for block in section.blocks -%}
+        {%- liquid
+          assign b = block.settings
+        -%}
+        <li>
+          <a href=''>{{- b.button_text -}}</a>
+          {%- render 'component.image', img: b.image -%}
+          <h2>{{- b.title -}}</h2>
+        </li>
+      {%- endfor -%}
+    </ul>
+  </section>
+{% endcomment %}
+
+<section data-component='hero'>
+  <h1>{{- s.title -}}</h1>
+  <button data-button data-info='{{- s.title -}}'>Click me!</button>
+</section>
+
+{% schema %}
+{
+  "name": "Video",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    }
+  ],
+  "blocks": [
+    {
+      "name": "card",
+      "type": "card",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title"
+        },
+        {
+          "type": "text",
+          "id": "button_text",
+          "label": "Button text"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Video"
+    }
+  ]
+}
+{% endschema %}

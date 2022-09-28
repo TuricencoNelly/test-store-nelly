@@ -3,6 +3,10 @@
     "search": {
       "search": "Search"
     },
+    "featured_reviews":{
+      "add_to_wishlist": "Add to wishlist",
+      "remove_from_wishlist": "Remove from wishlist"
+    },
     "footer": {
       "copyright": "&copy; Copyright {{ store }} {{ year }} – All Rights Reserved"
     }

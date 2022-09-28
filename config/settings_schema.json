@@ -8,6 +8,25 @@
     "theme_support_url": "https://support.shopify.com/"
   },
   {
+    "name": "Colors",
+    "settings":[
+      {
+        "type": "header",
+        "content": " The theme colors"
+      },
+      {
+        "type": "color",
+        "id": "colors_primary",
+        "label": " Primary"
+      },
+      {
+        "type": "color",
+        "id": "colors_secondary",
+        "label": " Secondary"
+      }
+    ]
+  },
+  {
     "name": "Social media",
     "settings": [
       {

@@ -1,0 +1,46 @@
+{% comment%}
+  
+  Expected beghaviour:
+    Render the review
+  
+  About:
+    The snippet is used to render real customer reviews.
+
+  Accepts:
+    title: {String} required, title of the review
+    text: {String}, text of the review
+    stars: {Nimber} required, ammount of start given by the reviewer
+    img: {Image}, image of the reviewer
+    verified: {Boolean}, is the reviewer verified
+
+  Usage:
+  {%- render 'component.review',
+    title: "Amazing socks",
+    text: 'Truly amazing socks, 5 stars',
+    start: 5,
+    verified: true
+  -%}
+
+{% endcomment%}
+
+{%-liquid
+  assign starcount = (1..stars)
+-%}
+
+<div>
+  <h3>{{- title -}}{%- if verified -%}<span>verified</span>{%- endif -%}</h3>
+  <ul>
+    {%- for i in starcount -%}
+      <li>Star {{ i }}</li>
+    {%- endfor-%}
+</ul>
+  {%- if text -%}
+    <p>{{- text -}}</p>
+  {%- endif -%}
+
+  {%- if img -%}
+    {%- render 'component.image',
+      img: img
+    -%}
+  {%- endif -%}
+</div>

@@ -1,0 +1,24 @@
+<h1>Reviews</h1>
+
+{{- settings.colors_primary -}}
+{{- settings.colors_secondary -}}
+
+{{- 'general.featured_reviews.add_to_wishlist' | t -}}
+{{- 'general.featured_reviews.remove_from_wishlist' | t -}}
+{%- render 'component.review',
+  title: 'Amazing socks',
+  text: 'Truly cool socks, 5 stars!!!',
+  stars: 5,
+  verified: true
+-%}
+
+{% schema %}
+{
+  "name": "Featured reviews",
+  "presets": [
+    {
+      "name": "Featured reviews"
+    }
+  ]
+}
+{% endschema %}
