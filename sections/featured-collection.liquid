@@ -1,0 +1,37 @@
+{% liquid
+  assign s = section.settings
+%}
+
+<section>
+  <h2>{{- s.title -}}</h2>
+  <ul>
+    {%- for product in s.collection.products -%}
+      <li>
+        {%- render 'component.product-item', product: product -%}
+      </li>
+    {%- endfor -%}
+  </ul>
+</section>
+
+{% schema %}
+{
+  "name": "Featured collection",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    },
+    {
+      "type": "collection",
+      "id": "product_collection",
+      "label": "Here you can select a collection with multiple products"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Featured collection"
+    }
+  ]
+}
+{% endschema %}

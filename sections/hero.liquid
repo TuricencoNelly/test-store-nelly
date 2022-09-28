@@ -1,0 +1,89 @@
+{%- liquid
+  assign s = section.settings
+  assign image = s.image
+  assign image_desktop = s.image_desktop
+  assign highlight_image = s.highlight_image
+-%}
+
+<section>
+  <h1><{{- s.title -}}</h1>
+  <a href="">{{- s.button_text -}}</a>
+    
+  {%- render 'component.image',
+    img: image,
+    desktop_img: image_desktop
+  -%}
+
+  {%- render 'component.image',
+    img: highlight_image,
+  -%}
+</section>
+
+
+{% schema %}
+{
+  "name": "Hero",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Main image banner",
+      "info": "Here you can adjust the main banner"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_desktop",
+      "label": "Desktop image"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button text"
+    },
+    {
+      "type": "url",
+      "id": "button_url",
+      "label": "Button URL"
+    },
+    {
+      "type": "header",
+      "content": "Highlight banner",
+      "info": "Here you can adjust the highlight banner"
+    },
+    {
+      "type": "image_picker",
+      "id": "highlight_image",
+      "label": "Highlight image"
+    },
+    {
+      "type": "text",
+      "id": "highlight_text",
+      "label": "Heighlight text"
+    },
+    {
+      "type": "text",
+      "id": "highlight_link",
+      "label": "Highlight link"
+    },
+    {
+      "type": "url",
+      "id": "highlight_url",
+      "label": "Highlight URL"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Hero"
+    }
+  ]
+}
+{% endschema %}
