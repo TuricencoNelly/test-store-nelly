@@ -1,13 +1,22 @@
+<style>
+  .color {
+    background-color: red;
+  }
+</style>
 <section>
-  <ul>
+  <ul class='space-y-8 mt-8'>
     {%- for block in section.blocks -%}
       {%- liquid
         assign b = block.settings
       -%}
       {%- if block.type == 'quote' -%}
-        <li>{{- b.quote -}}</li>
+        <li class='py-8 px-8 max-w-sm mx-auto bg-purple-700 text-white font-medium shadow-lg'>
+          {{- b.quote -}}
+        </li>
       {%- elsif block.type == 'image' -%}
-        {%- render 'component.image', img: b.image -%}
+        <div class='flex max-w-sm justify-center'>
+          {%- render 'component.image', img: b.image -%}
+        </div>
       {%- endif -%}
     {%- endfor -%}
   </ul>
@@ -19,7 +28,6 @@
     {
       "name": "quote",
       "type": "quote",
-      "limit": 1,
       "settings": [
         {
           "type": "text",
@@ -31,7 +39,7 @@
     {
       "name": "image",
       "type": "image",
-      "limit": 5,
+      "limit": 6,
       "settings": [
         {
           "type": "image_picker",
