@@ -4,19 +4,22 @@
   }
 </style>
 <section>
-  <ul class='space-y-8 mt-8'>
+  <ul class='space-y-8 mt-8 '>
     {%- for block in section.blocks -%}
       {%- liquid
         assign b = block.settings
       -%}
       {%- if block.type == 'quote' -%}
-        <li class='py-8 px-8 max-w-sm mx-auto bg-purple-700 text-white font-medium shadow-lg'>
+        <li class='py-8 px-8 max-w-sm mx-auto rounded-lg bg-purple-700 text-white font-medium shadow-lg'>
           {{- b.quote -}}
         </li>
-      {%- elsif block.type == 'image' -%}
-        <div class='flex max-w-sm justify-center'>
+      {%- endif -%}
+    </ul>
+    <ul class="space-x-4">
+      {%- if block.type == 'image' -%}
+        <li class='max-w-[100px] rounded-lg'>
           {%- render 'component.image', img: b.image -%}
-        </div>
+        </li>
       {%- endif -%}
     {%- endfor -%}
   </ul>
