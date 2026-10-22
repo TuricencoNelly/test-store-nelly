@@ -12,7 +12,7 @@
       </li>
     {%- endfor -%}
   </ul>
-  {%- render : 'component.payment-icons' -%}
+  {%- render 'component.payment-icons' -%}
 </footer>
 
 {% schema %}
@@ -27,3 +27,13 @@
   ]
 }
 {% endschema %}
+{% comment %}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: "{%- render : 'component.payment-icons' -%}"
+  to: "{%- render 'component.payment-icons' -%}"
+  position: 475..515
+{% endcomment %}

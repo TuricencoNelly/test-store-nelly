@@ -90,7 +90,7 @@
       -%}
       {% comment %} theme-check-enable SpaceInsideBraces {% endcomment %}
     </div>
-    {%- render : 'component.payment-icons' -%}
+    {%- render 'component.payment-icons' -%}
   </form>
 </div>
 
@@ -100,3 +100,13 @@
   "settings": []
 }
 {% endschema %}
+{% comment %}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: "{%- render : 'component.payment-icons' -%}"
+  to: "{%- render 'component.payment-icons' -%}"
+  position: 3597..3637
+{% endcomment %}
